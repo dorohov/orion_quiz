@@ -1,0 +1,48 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Akzidenz-Grotesk Pro';
+    background-image: url(../../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}

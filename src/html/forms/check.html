@@ -1,0 +1,16 @@
+<div class="input-checkbox is--w@@width is--@@type">
+    <input type="radio" id="@@name@@id" name="@@name" value="@@text">
+    <label for="@@name@@id">
+        @@if(type == 'image') {
+            <span class="is--image">
+                <img src="img/@@icon" alt="@@text">
+            </span>
+        }
+        @@if(type == 'icon') {
+            <span class="is--icon">
+                @@include('../components/component.svg.html', {"name": "qwe"})
+            </span>
+        }
+        @@text
+    </label>
+</div>

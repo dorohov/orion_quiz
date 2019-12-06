@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orion Quiz</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script>
+        var fv = {};
+    </script>
+</head>
+
+<body>
+
+    <div class="display">
+        <div class="display__heading">
+            <div class="display__heading__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="display__heading__contacts">
+                <div class="display__heading__contacts__phone">+7 (4862) 44-51-15</div>
+                <div class="display__heading__contacts__email">mail@orion-print.org</div>
+            </div>
+        </div>
+        <div class="display__main">
+            <div class="display__main__inner">
+                <div class="screen is--on is--circle is--link is--parts">
+                    <div class="screen__hello">
+                        <div class="screen__hello__inner">
+                            <div class="screen__hello__title">Узнайте срок и стоимость <br> изготовления</div>
+                            <div class="screen__hello__sub">Визитки</div>
+                            <div class="screen__hello__btn">
+                                <button class="btn is--start">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-link">
+                        <a href="https://orion-print.org/" target="_blank">orion-print.org</a>
+                    </div>
+                    <div class="part1" data-tr>
+                        <img src="img/part1.png" alt="">
+                    </div>
+                    <div class="part2" data-tri>
+                        <img src="img/part2.png" alt="">
+                    </div>
+                </div>
+                <div class="screen is--s">
+                    <div class="screen__fields">
+                        <div class="field__row">
+                            <div class="field is--w50">
+                                <div class="field__inner">
+                                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="vis11" name="vis1" value="Да">
+                                            <label for="vis11">
+
+
+                                                Да
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="vis12" name="vis1" value="Надо сделать">
+                                            <label for="vis12">
+
+
+                                                Надо сделать
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is--w50">
+                                <div class="field__inner">
+                                    <div class="field__heading">Тип картона</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--image">
+                                            <input type="radio" id="vis21" name="vis2" value="Стандартный белый">
+                                            <label for="vis21">
+
+                                                <span class="is--image">
+                                                    <img src="img/carton1.png" alt="Стандартный белый">
+                                                </span>
+
+
+                                                Стандартный белый
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--image">
+                                            <input type="radio" id="vis22" name="vis2" value="Дизайнерский">
+                                            <label for="vis22">
+
+                                                <span class="is--image">
+                                                    <img src="img/carton2.png" alt="Дизайнерский">
+                                                </span>
+
+
+                                                Дизайнерский
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество сторон</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="vis31" name="vis3" value="Односторонняя">
+                                            <label for="vis31">
+
+
+                                                <span class="is--icon">
+                                                    <svg class="svg-qwe-dims svg is--qwe">
+                                                        <use xlink:href="img/svg/sprites.svg#qwe"></use>
+                                                    </svg>
+                                                </span>
+
+                                                Односторонняя
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="vis32" name="vis3" value="Двухсторонняя">
+                                            <label for="vis32">
+
+
+                                                <span class="is--icon">
+                                                    <svg class="svg-qwe-dims svg is--qwe">
+                                                        <use xlink:href="img/svg/sprites.svg#qwe"></use>
+                                                    </svg>
+                                                </span>
+
+                                                Двухсторонняя
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество</div>
+                                    <div class="field__inputs">
+                                        <div class="input-slider">
+                                            <div class="input-slider__left">
+                                                <div class="main-slider"></div>
+                                                <input type="hidden" class="is--w">
+                                                <ul>
+                                                    <li>100</li>
+                                                    <li>1500</li>
+                                                </ul>
+                                            </div>
+                                            <div class="input-slider__right">
+                                                <input type="number" placeholder="500 шт.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__submit">
+                            <button class="btn">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/jquery-ui.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

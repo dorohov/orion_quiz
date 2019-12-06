@@ -1,0 +1,45 @@
+.container {
+    max-width: #{1320px + 60px};
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #132C81;
+    font-weight: 600;
+    font-size: 16px;
+    background: none;
+    border: 3px solid #8CBD24;
+    border-radius: 47px;
+    padding: 17px 40px;
+    cursor: pointer;
+    position: relative;
+    transition: .25s all ease;
+    &::after,
+    &::before {
+        content: '';
+        width: 5px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        transition: .25s all ease;
+    }
+    &::after {
+        right: 27px;
+        top: -3px;
+    }
+    &::before {
+        left: 24px;
+        bottom: -3px;
+    }
+    &:hover {
+        background: #8CBD24;
+        color: #fff;
+        &::after,
+        &::before {
+            background: #8CBD24;
+        }
+    }
+}

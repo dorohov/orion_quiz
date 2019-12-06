@@ -1,0 +1,93 @@
+<div class="screen is--s">
+    <div class="screen__fields">
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "vis1",
+                            "id": 1,
+                            "text": "Да",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "vis1",
+                            "id": 2,
+                            "text": "Надо сделать",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Тип картона</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "vis2",
+                            "id": 1,
+                            "text": "Стандартный белый",
+                            "width": "auto",
+                            "type": "image",
+                            "icon": "carton1.png"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "vis2",
+                            "id": 2,
+                            "text": "Дизайнерский",
+                            "width": "auto",
+                            "type": "image",
+                            "icon": "carton2.png"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Количество сторон</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "vis3",
+                            "id": 1,
+                            "text": "Односторонняя",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "vis31"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "vis3",
+                            "id": 2,
+                            "text": "Двухсторонняя",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "vis32"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Количество</div>
+                    <div class="field__inputs">
+                        @@include('../forms/slider.html', {
+                            "name": "vis4",
+                            "id": 1
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__submit">
+            <button class="btn">Рассчитать стоимость</button>
+        </div>
+    </div>
+</div>
