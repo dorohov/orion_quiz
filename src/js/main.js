@@ -53,5 +53,18 @@
             setValue(slider, $(this), thisVal, true)
         })
 
+        $('form').parsley()
+
+        var phoneInputs = document.getElementsByClassName('input-phone');
+
+        if(phoneInputs.length) {
+            for(var i = 0; i < phoneInputs.length; i++) {
+                new IMask(
+                    phoneInputs[i], {
+                    mask: '+{7}(900)000-00-00'
+                });
+            }
+        }
+
     })
 })(jQuery);

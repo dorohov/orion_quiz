@@ -1,0 +1,131 @@
+<div class="screen is--s">
+    <div class="screen__fields">
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "pak1",
+                            "id": 1,
+                            "text": "Да",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak1",
+                            "id": 2,
+                            "text": "Надо сделать",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Размер</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "pak2",
+                            "id": 1,
+                            "text": "20*30 см",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak2",
+                            "id": 2,
+                            "text": "30*40 см",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak2",
+                            "id": 3,
+                            "text": "40*50 см",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak2",
+                            "id": 4,
+                            "text": "50*60 см",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak2",
+                            "id": 5,
+                            "text": "60*50 см",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Цветность</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "pak3",
+                            "id": 1,
+                            "text": "1 цвет",
+                            "width": "50 is--cc",
+                            "type": "image",
+                            "icon": "pak31.svg"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak3",
+                            "id": 2,
+                            "text": "2 цвета",
+                            "width": "50 is--cc",
+                            "type": "image",
+                            "icon": "pak32.svg"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak3",
+                            "id": 3,
+                            "text": "3 цвета",
+                            "width": "50 is--cc",
+                            "type": "image",
+                            "icon": "pak33.svg"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "pak3",
+                            "id": 4,
+                            "text": "4 цвета",
+                            "width": "50 is--cc",
+                            "type": "image",
+                            "icon": "pak34.svg"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Количество</div>
+                    <div class="field__inputs">
+                        @@include('../forms/slider.html', {
+                            "name": "nak4",
+                            "id": 1
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('../forms/submit.html')
+    </div>
+</div>

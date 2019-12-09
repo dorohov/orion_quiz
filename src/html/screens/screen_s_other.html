@@ -1,0 +1,30 @@
+<div class="screen is--s">
+    <div class="screen__fields">
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "brand1",
+                            "id": 1,
+                            "text": "Да",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "brand1",
+                            "id": 2,
+                            "text": "Надо сделать",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('../forms/submit.html')
+    </div>
+</div>

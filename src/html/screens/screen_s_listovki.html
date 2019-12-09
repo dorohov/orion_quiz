@@ -1,0 +1,138 @@
+<div class="screen is--s">
+    <div class="screen__fields">
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "lis1",
+                            "id": 1,
+                            "text": "Да",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis1",
+                            "id": 2,
+                            "text": "Надо сделать",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Форматы</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "lis2",
+                            "id": 1,
+                            "text": "А4",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis2",
+                            "id": 2,
+                            "text": "А5",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis2",
+                            "id": 3,
+                            "text": "А6",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis2",
+                            "id": 4,
+                            "text": "Стандарт",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Количество сторон</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "lis3",
+                            "id": 1,
+                            "text": "Односторонние",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "lis31"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis3",
+                            "id": 2,
+                            "text": "Двухсторонние",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "lis32"
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Плотность бумаги</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "lis4",
+                            "id": 1,
+                            "text": "Тонкая",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": "kal21"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis4",
+                            "id": 2,
+                            "text": "Средней плотности",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": "kal22"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "lis4",
+                            "id": 3,
+                            "text": "Толстая",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": "kal22"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Количество</div>
+                    <div class="field__inputs">
+                        @@include('../forms/slider.html', {
+                            "name": "lis5",
+                            "id": 1
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('../forms/submit.html')
+    </div>
+</div>

@@ -3,8 +3,8 @@
     $(function() {
         $('.screen.is--th').hide();
 
-        $('.screen.is--on').hide();
-        // $('.screen.is--s').hide();
+        // $('.screen.is--on').hide();
+        $('.screen.is--s').hide();
 
         $('.btn.is--start').on('click', function() {
             $('.screen.is--on').hide();
@@ -32,7 +32,7 @@
                 }
                 if(textFields.length != 0) {
                     textFields.each(function() {
-                        if(Number.parseInt($(this).val()) <= 0 || typeof Number.parseInt($(this).val()) != 'number' || isNaN(Number.parseInt($(this).val()))) {
+                        if(parseInt($(this).val()) <= 0 || typeof parseInt($(this).val()) != 'number' || isNaN(parseInt($(this).val()))) {
                             textOk = false
                         }
                     })
@@ -62,6 +62,27 @@
                 $('.screen.is--th').show()
             }
 
+        })
+
+        $('#finishForm').on('submit', function(e) {
+
+            e.preventDefault()
+
+            $('#modal-success').modal()
+
+            $.ajax({
+                url: 'send.php',
+                type: 'POST',
+                data: JSON.stringify(allResults)
+            }).done(function(data) {
+                $('#modal-success').modal({
+                    fadeDuration: 100,
+                    fadeDelay: 0.50,
+                    escapeClose: false,
+                    clickClose: false,
+                    showClose: false
+                })
+            })
         })
 
     })

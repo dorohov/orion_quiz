@@ -76,11 +76,11 @@
                         <div class="field__row">
                             <div class="field is--w100">
                                 <div class="field__inner">
-                                    <div class="field__heading">Количество сторон</div>
+                                    <div class="field__heading">Вид сборки</div>
                                     <div class="field__inputs">
                                         <div class="input-checkbox is--wauto is--icon">
-                                            <input type="radio" id="kal31" name="kal3" value="Квартальный">
-                                            <label for="kal31">
+                                            <input type="radio" id="kal21" name="kal2" value="Квартальный">
+                                            <label for="kal21">
 
 
                                                 <span class="is--icon">
@@ -100,8 +100,8 @@
                                             </label>
                                         </div>
                                         <div class="input-checkbox is--wauto is--icon">
-                                            <input type="radio" id="kal32" name="kal3" value="Домик">
-                                            <label for="kal32">
+                                            <input type="radio" id="kal22" name="kal2" value="Домик">
+                                            <label for="kal22">
 
 
                                                 <span class="is--icon">
@@ -117,8 +117,8 @@
                                             </label>
                                         </div>
                                         <div class="input-checkbox is--wauto is--icon">
-                                            <input type="radio" id="kal33" name="kal3" value="Домик перекидной">
-                                            <label for="kal33">
+                                            <input type="radio" id="kal23" name="kal2" value="Домик перекидной">
+                                            <label for="kal23">
 
 
                                                 <span class="is--icon">
@@ -133,8 +133,8 @@
                                             </label>
                                         </div>
                                         <div class="input-checkbox is--wauto is--icon">
-                                            <input type="radio" id="kal34" name="kal3" value="Листовой перекидной">
-                                            <label for="kal34">
+                                            <input type="radio" id="kal24" name="kal2" value="Листовой перекидной">
+                                            <label for="kal24">
 
 
                                                 <span class="is--icon">
@@ -156,8 +156,8 @@
                                             </label>
                                         </div>
                                         <div class="input-checkbox is--wauto is--icon">
-                                            <input type="radio" id="kal35" name="kal3" value="Карманный">
-                                            <label for="kal35">
+                                            <input type="radio" id="kal25" name="kal2" value="Карманный">
+                                            <label for="kal25">
 
 
                                                 <span class="is--icon">
@@ -215,9 +215,11 @@
                             <div class="screen__finish__title">Оставьте номер телефона</div>
                             <div class="screen__finish__sub">Менеджер сообщит Вам стоимость заказа</div>
                             <div class="screen__finish__form">
-                                <form action="#">
-                                    <input type="text" class="input-text" placeholder="+7(___) ___-__-__">
-                                    <button class="btn" type="submit">Отправить</button>
+                                <form id="finishForm">
+                                    <div class="is--field">
+                                        <input type="text" class="input-text input-phone" placeholder="+7(___) ___-__-__" required data-parsley-minlength="16">
+                                    </div>
+                                    <button class="is--finish btn" type="submit">Отправить</button>
                                 </form>
                             </div>
                         </div>
@@ -236,9 +238,20 @@
         </div>
     </div>
 
+    <div id="modal-success" class="modal">
+        <div class="modal__inner">
+            <div class="modal__heading">Ваше сообщение отправлено!</div>
+            <div class="modal__text">Менеджер свяжется с Вами <br> в ближайшее время</div>
+            <div class="modal__btn">
+                <a href="https://orion-print.org/" class="btn is--default">
+                    На сайт Orion-Print
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="dist/js/jquery-ui.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle.js"></script>
 </body>
 
 </html>

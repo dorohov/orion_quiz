@@ -1,12 +1,12 @@
 <div class="screen is--s">
     <div class="screen__fields">
         <div class="field__row">
-            <div class="field is--w100">
+            <div class="field is--w50">
                 <div class="field__inner">
                     <div class="field__heading">Нужен ли дизайн-макет?</div>
                     <div class="field__inputs">
                         @@include('../forms/check.html', {
-                            "name": "kal1",
+                            "name": "serf1",
                             "id": 1,
                             "text": "Да",
                             "width": "auto",
@@ -14,7 +14,7 @@
                             "icon": ""
                         })
                         @@include('../forms/check.html', {
-                            "name": "kal1",
+                            "name": "serf1",
                             "id": 2,
                             "text": "Надо сделать",
                             "width": "auto",
@@ -24,51 +24,61 @@
                     </div>
                 </div>
             </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Размер</div>
+                    <div class="field__inputs">
+                        @@include('../forms/text.html', {
+                            "name": "serf2",
+                            "text": "Укажите размер"
+                        })
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="field__row">
-            <div class="field is--w100">
+            <div class="field is--w50">
                 <div class="field__inner">
-                    <div class="field__heading">Вид сборки</div>
+                    <div class="field__heading">Количество сторон</div>
                     <div class="field__inputs">
                         @@include('../forms/check.html', {
-                            "name": "kal2",
+                            "name": "serf3",
                             "id": 1,
-                            "text": "Квартальный",
+                            "text": "Односторонние",
                             "width": "auto",
                             "type": "icon",
-                            "icon": "kal21"
+                            "icon": "serf31"
                         })
                         @@include('../forms/check.html', {
-                            "name": "kal2",
+                            "name": "serf3",
                             "id": 2,
-                            "text": "Домик",
+                            "text": "Двухсторонние",
                             "width": "auto",
                             "type": "icon",
-                            "icon": "kal22"
+                            "icon": "serf32"
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Тип картона</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "serf4",
+                            "id": 1,
+                            "text": "Стандартный белый",
+                            "width": "auto",
+                            "type": "image",
+                            "icon": "carton1.png"
                         })
                         @@include('../forms/check.html', {
-                            "name": "kal2",
-                            "id": 3,
-                            "text": "Домик перекидной",
+                            "name": "serf4",
+                            "id": 2,
+                            "text": "Дизайнерский",
                             "width": "auto",
-                            "type": "icon",
-                            "icon": "kal23"
-                        })
-                        @@include('../forms/check.html', {
-                            "name": "kal2",
-                            "id": 4,
-                            "text": "Листовой перекидной",
-                            "width": "auto",
-                            "type": "icon",
-                            "icon": "kal24"
-                        })
-                        @@include('../forms/check.html', {
-                            "name": "kal2",
-                            "id": 5,
-                            "text": "Карманный",
-                            "width": "auto",
-                            "type": "icon",
-                            "icon": "kal25"
+                            "type": "image",
+                            "icon": "carton2.png"
                         })
                     </div>
                 </div>
@@ -80,7 +90,7 @@
                     <div class="field__heading">Количество</div>
                     <div class="field__inputs">
                         @@include('../forms/slider.html', {
-                            "name": "kal3",
+                            "name": "serf5",
                             "id": 1
                         })
                     </div>
