@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Календари - Orion Quiz</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script>
+        var fv = {};
+    </script>
+</head>
+
+<body>
+
+    <div class="display">
+        <div class="display__heading">
+            <div class="display__heading__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="display__heading__contacts">
+                <div class="display__heading__contacts__phone">+7 (4862) 44-51-15</div>
+                <div class="display__heading__contacts__email">mail@orion-print.org</div>
+            </div>
+        </div>
+        <div class="display__main">
+            <div class="display__main__inner">
+                <div class="screen is--on is--circle is--link is--parts">
+                    <div class="screen__hello">
+                        <div class="screen__hello__inner">
+                            <div class="screen__hello__title">Узнайте срок и стоимость <br> изготовления</div>
+                            <div class="screen__hello__sub">Календари</div>
+                            <div class="screen__hello__btn">
+                                <button class="btn is--start">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-link">
+                        <a href="https://orion-print.org/" target="_blank">orion-print.org</a>
+                    </div>
+                    <div class="part1" data-tr>
+                        <img src="img/part1.png" alt="">
+                    </div>
+                    <div class="part2" data-tri>
+                        <img src="img/part2.png" alt="">
+                    </div>
+                </div>
+                <div class="screen is--s">
+                    <div class="screen__fields">
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="kal11" name="kal1" value="Да">
+                                            <label for="kal11">
+
+
+                                                Да
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="kal12" name="kal1" value="Надо сделать">
+                                            <label for="kal12">
+
+
+                                                Надо сделать
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество сторон</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="kal31" name="kal3" value="Квартальный">
+                                            <label for="kal31">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="0.5" y="0.5" width="26" height="29" stroke="black" />
+                                                        <path d="M5 6H22" stroke="black" stroke-width="0.5" />
+                                                        <path d="M5 9H22" stroke="black" stroke-width="0.5" />
+                                                        <path d="M5 12H22" stroke="black" stroke-width="0.5" />
+                                                        <rect x="5.25" y="17.25" width="3.5" height="4.5" stroke="black" stroke-width="0.5" />
+                                                        <rect x="11.25" y="17.25" width="4.5" height="4.5" stroke="black" stroke-width="0.5" />
+                                                        <rect x="18.25" y="17.25" width="3.5" height="4.5" stroke="black" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Квартальный
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="kal32" name="kal3" value="Домик">
+                                            <label for="kal32">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M27.7723 20.6083L34.9997 19.9474L32.684 1.63158L8.36816 1L8.3683 9.2958" stroke="white" />
+                                                        <path d="M1.84211 9.21045L26.1579 9.84203L28.4737 28.1578L2.89474 30.7894M1.84211 9.21045L1 28.9999M1.84211 9.21045L2.70475 26.8947M2.89474 30.7894L2.36842 28.842M2.89474 30.7894L2.70475 26.8947M1 28.9999L1.84211 26.8947M1 28.9999L2.36842 28.842M1.84211 26.8947L2.36842 28.842M1.84211 26.8947H2.70475" stroke="white" />
+                                                        <path d="M5.31543 15.8423H17.1049M17.218 18.3686L17.1049 17.1054H15.1049M17.218 18.3686L5.50934 18.5791M17.218 18.3686L17.3406 19.737M5.50934 18.5791L5.31543 17.1054H7.21017M5.50934 18.5791L5.70324 20.0528M5.70324 20.0528L17.3406 19.737M5.70324 20.0528L5.92485 21.737M17.3406 19.737L17.4725 21.2107M5.92485 21.737L17.4725 21.2107M5.92485 21.737L6.14645 23.4212M17.4725 21.2107L17.6045 22.6844M6.14645 23.4212L6.36806 25.1054L8.2628 24.9476M6.14645 23.4212L17.6045 22.6844M17.6045 22.6844L17.7365 24.1581L16.3681 24.2721M8.2628 24.9476L7.21017 17.1054M8.2628 24.9476L10.2628 24.7809M7.21017 17.1054H9.21017M9.21017 17.1054L10.2628 24.7809M9.21017 17.1054H11.2102M10.2628 24.7809L12.3681 24.6054M11.2102 17.1054L12.3681 24.6054M11.2102 17.1054H13.1049M12.3681 24.6054L14.4733 24.43M13.1049 17.1054L14.4733 24.43M13.1049 17.1054H15.1049M14.4733 24.43L16.3681 24.2721M15.1049 17.1054L16.3681 24.2721" stroke="white" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Домик
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="kal33" name="kal3" value="Домик перекидной">
+                                            <label for="kal33">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.10345 1L33.9655 1.82759L37 25.8276L3.48276 29.2759M2.10345 1L1 26.931M2.10345 1L3.23381 24.1724M3.48276 29.2759L2.7931 26.7241M3.48276 29.2759L3.23381 24.1724M1 26.931L2.10345 24.1724M1 26.931L2.7931 26.7241M2.10345 24.1724L2.7931 26.7241M2.10345 24.1724H3.23381" stroke="black" />
+                                                        <path d="M30.4828 6.24146H7.55176V20.6552L32.4483 18.6897L30.4828 6.24146Z" stroke="black" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Домик перекидной
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="kal34" name="kal3" value="Листовой перекидной">
+                                            <label for="kal34">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M25.5098 21.7843L26.098 1L3.7451 1.39216C4.33333 4.52941 3.7451 17.2745 3.7451 23.7451C3.7451 28.9216 1.91503 30.7386 1 31M25.5098 21.7843C25.5752 22.1111 25.1569 22.2941 22.9608 20.4118C20.7647 18.5294 19.3007 17.1438 18.8431 16.6863C16.9477 20.6078 10.7255 28.9608 1 31M25.5098 21.7843C19.0784 25.0784 6.4902 29.3007 1 31" stroke="black" />
+                                                        <path d="M5.31348 5.70581H20.8037M5.31348 6.6862H20.8037M5.31348 7.66659H20.8037" stroke="black" stroke-width="0.5" />
+                                                        <rect x="5.75977" y="11.054" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="10.4658" y="11.054" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="15.1719" y="11.054" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="19.8779" y="11.054" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="5.75977" y="16.1519" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="10.4658" y="16.1519" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                        <rect x="5.75977" y="21.25" width="3.42157" height="3.81373" stroke="black" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Листовой перекидной
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="kal35" name="kal3" value="Карманный">
+                                            <label for="kal35">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="15.2427" y="0.617117" width="22.7947" height="15.1977" transform="rotate(74.2219 15.2427 0.617117)" stroke="black" />
+                                                        <rect x="33.6034" y="0.503783" width="22.7947" height="15.1977" transform="rotate(89.5649 33.6034 0.503783)" stroke="black" />
+                                                        <rect style="fill: white !important;" x="12.633" y="6.66977" width="22.7947" height="15.1977" transform="rotate(51.7253 12.633 6.66977)" fill="white" stroke="black" />
+                                                        <rect x="20.71" y="3.66016" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                        <rect x="24.9727" y="3.66016" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                        <rect x="29.2354" y="3.66016" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                        <rect x="20.71" y="7.92261" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                        <rect x="24.9727" y="7.92261" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                        <rect x="29.2354" y="7.92261" width="2.05753" height="2.91004" stroke="black" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Карманный
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество</div>
+                                    <div class="field__inputs">
+                                        <div class="input-slider">
+                                            <div class="input-slider__left">
+                                                <div class="main-slider"></div>
+                                                <input type="hidden" class="is--w" value="500">
+                                                <ul>
+                                                    <li>100</li>
+                                                    <li>1500</li>
+                                                </ul>
+                                            </div>
+                                            <div class="input-slider__right">
+                                                <input type="number" placeholder="500 шт.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__submit">
+                            <button class="btn is--submit">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen is--th is--circle is--link is--parts">
+                    <div class="screen__finish">
+                        <div class="screen__finish__inner">
+                            <div class="screen__finish__title">Оставьте номер телефона</div>
+                            <div class="screen__finish__sub">Менеджер сообщит Вам стоимость заказа</div>
+                            <div class="screen__finish__form">
+                                <form action="#">
+                                    <input type="text" class="input-text" placeholder="+7(___) ___-__-__">
+                                    <button class="btn" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-link">
+                        <a href="https://orion-print.org/" target="_blank">orion-print.org</a>
+                    </div>
+                    <div class="part1" data-tr>
+                        <img src="img/part1.png" alt="">
+                    </div>
+                    <div class="part2" data-tri>
+                        <img src="img/part2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/jquery-ui.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

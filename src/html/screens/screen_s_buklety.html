@@ -1,0 +1,138 @@
+<div class="screen is--s">
+    <div class="screen__fields">
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "buk1",
+                            "id": 1,
+                            "text": "Да",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk1",
+                            "id": 2,
+                            "text": "Надо сделать",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Размер</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "buk2",
+                            "id": 1,
+                            "text": "В сложенном виде",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk21"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk2",
+                            "id": 2,
+                            "text": "В развороте",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk22"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Количество сторон</div>
+                    <div class="field__inputs is--w50">
+                        @@include('../forms/check.html', {
+                            "name": "buk3",
+                            "id": 1,
+                            "text": "Сгиб",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk31"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk3",
+                            "id": 2,
+                            "text": "Скоба",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk32"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk3",
+                            "id": 3,
+                            "text": "Пружина",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk33"
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk3",
+                            "id": 4,
+                            "text": "Термоклей",
+                            "width": "auto",
+                            "type": "icon",
+                            "icon": "buk34"
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="field is--w50">
+                <div class="field__inner">
+                    <div class="field__heading">Плотность бумаги</div>
+                    <div class="field__inputs">
+                        @@include('../forms/check.html', {
+                            "name": "buk4",
+                            "id": 1,
+                            "text": "Тонкая",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk4",
+                            "id": 2,
+                            "text": "Средней плотности",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                        @@include('../forms/check.html', {
+                            "name": "buk4",
+                            "id": 3,
+                            "text": "Плотная (почти картон)",
+                            "width": "auto",
+                            "type": "dot",
+                            "icon": ""
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__row">
+            <div class="field is--w100">
+                <div class="field__inner">
+                    <div class="field__heading">Количество</div>
+                    <div class="field__inputs">
+                        @@include('../forms/slider.html', {
+                            "name": "buk5",
+                            "id": 1
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('../forms/submit.html')
+    </div>
+</div>

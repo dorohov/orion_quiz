@@ -15,7 +15,7 @@
 
             var finalValue = value
 
-            if(value > 1500 || value < 0 || value == NaN) {
+            if(value > 1500 || value < 0 || isNaN(value)) {
                 finalValue = 0
             }
 
@@ -35,6 +35,7 @@
         $('.main-slider').slider({
             min: 100,
             max: 1500,
+            value: 500,
             range: "min",
             slide: function(e, ui) {
                 var input = $(this).parent().siblings('.input-slider__right').children('input')

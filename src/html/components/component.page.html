@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="@@lang">
 <head>
-    @@include('components/component.head.html')
+    @@include('component.head.html', {"title": "@@title"})
     <script>
         var fv = {};
     </script>
@@ -20,12 +20,13 @@
         </div>
         <div class="display__main">
             <div class="display__main__inner">
-                @@include('screens/screen_hello.html')
-                @@include('screens/screen_s_visitki.html')
+                @@include('../screens/screen_hello.html', {"title": "@@title"})
+                @@include('../screens/@@form.html')
+                @@include('../screens/screen_finish.html')
             </div>
         </div>
     </div>
 
-    @@include('components/component.scripts.html')
+    @@include('component.scripts.html')
 </body>
 </html>

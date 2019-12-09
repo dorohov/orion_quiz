@@ -54,6 +54,8 @@
         }
         &__main {
             &__inner {
+                padding-left: 5px;
+                padding-right: 5px;
                 .screen {
                     min-height: calc(100vh - 180px);
                 }

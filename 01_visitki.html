@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визитки - Orion Quiz</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script>
+        var fv = {};
+    </script>
+</head>
+
+<body>
+
+    <div class="display">
+        <div class="display__heading">
+            <div class="display__heading__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="display__heading__contacts">
+                <div class="display__heading__contacts__phone">+7 (4862) 44-51-15</div>
+                <div class="display__heading__contacts__email">mail@orion-print.org</div>
+            </div>
+        </div>
+        <div class="display__main">
+            <div class="display__main__inner">
+                <div class="screen is--on is--circle is--link is--parts">
+                    <div class="screen__hello">
+                        <div class="screen__hello__inner">
+                            <div class="screen__hello__title">Узнайте срок и стоимость <br> изготовления</div>
+                            <div class="screen__hello__sub">Визитки</div>
+                            <div class="screen__hello__btn">
+                                <button class="btn is--start">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-link">
+                        <a href="https://orion-print.org/" target="_blank">orion-print.org</a>
+                    </div>
+                    <div class="part1" data-tr>
+                        <img src="img/part1.png" alt="">
+                    </div>
+                    <div class="part2" data-tri>
+                        <img src="img/part2.png" alt="">
+                    </div>
+                </div>
+                <div class="screen is--s">
+                    <div class="screen__fields">
+                        <div class="field__row">
+                            <div class="field is--w50">
+                                <div class="field__inner">
+                                    <div class="field__heading">Нужен ли дизайн-макет?</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="vis11" name="vis1" value="Да">
+                                            <label for="vis11">
+
+
+                                                Да
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--dot">
+                                            <input type="radio" id="vis12" name="vis1" value="Надо сделать">
+                                            <label for="vis12">
+
+
+                                                Надо сделать
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is--w50">
+                                <div class="field__inner">
+                                    <div class="field__heading">Тип картона</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--image">
+                                            <input type="radio" id="vis21" name="vis2" value="Стандартный белый">
+                                            <label for="vis21">
+
+                                                <span class="is--image">
+                                                    <img src="img/carton1.png" alt="Стандартный белый">
+                                                </span>
+
+
+                                                Стандартный белый
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--image">
+                                            <input type="radio" id="vis22" name="vis2" value="Дизайнерский">
+                                            <label for="vis22">
+
+                                                <span class="is--image">
+                                                    <img src="img/carton2.png" alt="Дизайнерский">
+                                                </span>
+
+
+                                                Дизайнерский
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество сторон</div>
+                                    <div class="field__inputs">
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="vis31" name="vis3" value="Односторонняя">
+                                            <label for="vis31">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M43 0H1H0V1V24V25H1H43H44V24V1V0H43ZM43 24H1V1H43V24Z" fill="black" />
+                                                        <path d="M16 18H17V17V9V8H16H6H5V9V17V18H6H16ZM6 9H16V17H6V9Z" fill="black" />
+                                                        <path d="M39 8H21V9H39V8Z" fill="black" />
+                                                        <path d="M39 12H21V13H39V12Z" fill="black" />
+                                                        <path d="M39 17H21V18H39V17Z" fill="black" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Односторонняя
+                                            </label>
+                                        </div>
+                                        <div class="input-checkbox is--wauto is--icon">
+                                            <input type="radio" id="vis32" name="vis3" value="Двухсторонняя">
+                                            <label for="vis32">
+
+
+                                                <span class="is--icon">
+                                                    <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="10.1611" y="0.5" width="27.3391" height="15.1018" stroke="white" />
+                                                        <rect x="13.3818" y="5.65256" width="6.72884" height="5.4407" stroke="white" />
+                                                        <line x1="23.1865" y1="5.9407" x2="34.7798" y2="5.9407" stroke="white" />
+                                                        <line x1="23.1865" y1="7.87291" x2="34.7798" y2="7.87292" stroke="white" />
+                                                        <line x1="23.1865" y1="9.80513" x2="34.7798" y2="9.80513" stroke="white" />
+                                                        <path d="M9.80478 15.4577L9.80478 15.9577L10.3048 15.9577L28.3842 15.9577L27.055 23.3047L0.6083 16.5254L4.35234 1.91963L9.80478 3.59011L9.80478 15.4577Z" stroke="white" />
+                                                        <path d="M4.84662 12.9596L6.19149 7.71316L9.48284 8.74062L9.48284 11.5933L9.48284 14.1668L4.84662 12.9596Z" stroke="white" />
+                                                        <path d="M19.3217 15.7797L25.811 17.3518" stroke="white" stroke-width="0.5" />
+                                                    </svg>
+
+                                                </span>
+
+                                                Двухсторонняя
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__row">
+                            <div class="field is--w100">
+                                <div class="field__inner">
+                                    <div class="field__heading">Количество</div>
+                                    <div class="field__inputs">
+                                        <div class="input-slider">
+                                            <div class="input-slider__left">
+                                                <div class="main-slider"></div>
+                                                <input type="hidden" class="is--w" value="500">
+                                                <ul>
+                                                    <li>100</li>
+                                                    <li>1500</li>
+                                                </ul>
+                                            </div>
+                                            <div class="input-slider__right">
+                                                <input type="number" placeholder="500 шт.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field__submit">
+                            <button class="btn is--submit">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen is--th is--circle is--link is--parts">
+                    <div class="screen__finish">
+                        <div class="screen__finish__inner">
+                            <div class="screen__finish__title">Оставьте номер телефона</div>
+                            <div class="screen__finish__sub">Менеджер сообщит Вам стоимость заказа</div>
+                            <div class="screen__finish__form">
+                                <form action="#">
+                                    <input type="text" class="input-text" placeholder="+7(___) ___-__-__">
+                                    <button class="btn" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-link">
+                        <a href="https://orion-print.org/" target="_blank">orion-print.org</a>
+                    </div>
+                    <div class="part1" data-tr>
+                        <img src="img/part1.png" alt="">
+                    </div>
+                    <div class="part2" data-tri>
+                        <img src="img/part2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/jquery-ui.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>
